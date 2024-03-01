@@ -1,0 +1,20 @@
+.global-response-widget {
+    background-color: #e8e8e8fa;
+    height: 10vhpx;
+    width: 400px;
+    position: absolute;
+    left: 35vw;
+    top: 40vh;
+}
+
+.global-input {
+    background-color: #e8e8e8fa;
+    height: 40px;
+    width: 400px;
+    border-radius: 20px;
+    position: absolute;
+    left: 35vw;
+    top: 50vh;
+    padding-left:20px;
+    color: rgb(0, 186, 254);
+}

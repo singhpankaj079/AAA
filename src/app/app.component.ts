@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AAA';
+  showResponse: boolean = false;
+  input: string = '';
+  onKeyUp(value: KeyboardEvent) {
+    if (value.key === 'Enter') {
+      this.showResponse = true;
+    }
+  }
 }
