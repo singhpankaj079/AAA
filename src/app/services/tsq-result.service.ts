@@ -15,9 +15,9 @@ export class TsqResultService {
     entity: string;
   }) {
     const queryReqPayload: ITsqRequest = {
-      source_text: reqPayload.source,
-      dest_text: reqPayload.destination,
-      serv_select: reqPayload.service,
+      source_text: this.convertVal(reqPayload.source),
+      dest_text: this.convertVal(reqPayload.destination),
+      serv_select: this.convertVal(reqPayload.service),
       SelectedFirewalls: reqPayload.entity,
       negate_src: false,
       negate_dst: false,
@@ -41,5 +41,9 @@ export class TsqResultService {
       JSON.stringify(queryReqPayload),
       httpOptions
     );
+  }
+
+  convertVal(val: string) {
+    return val.toLowerCase() === 'any' ? '*' : val;
   }
 }
