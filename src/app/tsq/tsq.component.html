@@ -1,0 +1,7 @@
+<div>
+  <div class="prompt">{{prompt}}</div>
+  <ng-container *ngFor="let x of Object.keys(result);index as idx">
+    <label>{{x}}}</label>
+    <input type="text" [value]="result[x]" [id]="x">
+  </ng-container>
+</div>

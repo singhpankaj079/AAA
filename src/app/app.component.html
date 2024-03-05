@@ -1,4 +1,9 @@
-<div *ngIf="showResponse" class="global-response-widget"> {{ input }}</div>
-<input matInput type="text" class="global-input" (keyup)="onKeyUp($event)" [(ngModel)]="input">
+<div class="global-ai-widget">
+  <div *ngIf="showResponse" class="global-response-widget">
+    <app-tsq [result]="result"></app-tsq>
+  </div>
+  <input matInput type="text" class="global-input" (keyup)="onKeyUp($event)" [(ngModel)]="inputText">
+</div>
+
 
 

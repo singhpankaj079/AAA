@@ -1,0 +1,9 @@
+.tsq-input {
+  border: 0px;
+  border-bottom: 1px black;
+  padding: 5px;
+}
+.tsq-input:focus {
+  border: 0px;
+  border-bottom: 1px;
+}
